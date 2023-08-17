@@ -1,0 +1,25 @@
+---
+title: "Sssss"
+author: Jacob Phan
+format: html
+editor: visual
+image: "download.jpg"
+---
+
+## Quarto
+
+```{r message=FALSE, echo=FALSE}
+library(tidyverse)
+library(palmerpenguins)
+```
+
+```{r message=FALSE}
+dt <- penguins
+
+ plot <- dt %>%
+   ggplot(aes(x=bill_length_mm, y=body_mass_g, color = sex)) +
+   geom_point() +
+   facet_wrap(~species, ncol= 5)+
+   theme_minimal()
+plot
+```

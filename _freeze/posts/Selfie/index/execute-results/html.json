@@ -1,0 +1,16 @@
+{
+  "hash": "c289cc6469c2047da6b273527e1d3515",
+  "result": {
+    "markdown": "---\ntitle: \"Tutorial 4\"\nauthor: Jacob Phan\nformat: html\neditor: visual\n---\n\n\n## Quarto\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\ndt <- penguins\n\n plot <- dt %>%\n   ggplot(aes(x=bill_length_mm, y=body_mass_g, color = sex)) +\n   geom_point() +\n   facet_wrap(~species, ncol= 5)+\n   theme_minimal()\nplot\n```\n\n::: {.cell-output .cell-output-stderr}\n```\nWarning: Removed 2 rows containing missing values (`geom_point()`).\n```\n:::\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: 72c6d51d-af69-45fd-83a4-3a9c630ee7c1
+      url: 'https://jaccob.quarto.pub/jacob'
